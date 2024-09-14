@@ -21,6 +21,7 @@ IP_SLAVE_NODE=$2
 IP_VIP=$3
 
 # Создаем файл конфигурации
+mv /etc/keepalived/keepalived.conf /etc/keepalived/keepalived.conf.bak
 cat <<EOF > /etc/keepalived/keepalived.conf
 vrrp_script chk_haproxy {
     script "killall -0 haproxy"
