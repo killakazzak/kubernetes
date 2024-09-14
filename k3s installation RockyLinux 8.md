@@ -5,5 +5,5 @@ yum install -y haproxy lsyncd keepalived
 
 
 ```bash
-systemctl is-active haproxy && systemctl is-active lsyncd && systemctl is-active keepalived
+systemctl enable  --now haproxy lsyncd keepalived && systemctl is-active haproxy && systemctl is-active lsyncd && systemctl is-active keepalived
 ```
