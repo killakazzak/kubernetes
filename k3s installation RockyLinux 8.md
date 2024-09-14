@@ -1,4 +1,6 @@
 ### INSTALLATION LOAD BALANCERS
 ```bash
-yum -y install haproxy keepalived
+yum install -y haproxy lsyncd keepalived
+```
+
 
